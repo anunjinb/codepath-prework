@@ -72,7 +72,9 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Introduce"/>
                                 <connections>
-                                    <action selector="introduceSelfDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R95-6S-shU"/>
+                                    <action selector="introduceSelfDidTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9zw-Xs-dFg"/>
+                                    <action selector="numberOfPetsLabel:" destination="BYZ-38-t0r" eventType="valueChanged" id="vEm-uc-Rd8"/>
+                                    <action selector="stepperDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="w3h-4T-yoh"/>
                                 </connections>
                             </button>
                             <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="RaV-Jo-MXH">
@@ -120,11 +122,10 @@
                     </view>
                     <connections>
                         <outlet property="firstNameTextField" destination="Zoz-Na-wNd" id="BZg-wH-QkH"/>
-                        <outlet property="introduceButton" destination="GQ1-qA-fbW" id="CUV-SG-dam"/>
                         <outlet property="lastNameTextField" destination="O37-g8-hVE" id="yh7-nq-ysD"/>
-                        <outlet property="morePetLabel" destination="XFE-Gl-6xI" id="BSP-kx-uK8"/>
                         <outlet property="morePetStepper" destination="RaV-Jo-MXH" id="qEy-kM-daT"/>
                         <outlet property="morePetsSwitch" destination="xCB-lk-Uuc" id="trI-ne-fTR"/>
+                        <outlet property="numberOfPetsLabel" destination="XFE-Gl-6xI" id="UsK-l1-UnS"/>
                         <outlet property="schoolTextField" destination="W48-7A-Tne" id="Uuf-jd-AMG"/>
                         <outlet property="yearSegmentedControl" destination="lrs-ie-Vth" id="ovU-4n-34G"/>
                     </connections>
